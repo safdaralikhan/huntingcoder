@@ -42,7 +42,7 @@ console.log("blog",blog)
 
         {blog.map((v, i) => {
           return <div key={v.slug} >
-            <Link href={`/blogpost/${v.slug}`}>
+            <Link href={`/blogpost/${v.slug}`} passHref>
               <h3 className={styles.blogItem3} >{v.title}</h3></Link>
             <p className={styles.blogItemp} > {v.content.substr(0, 150)}...</p>
 
