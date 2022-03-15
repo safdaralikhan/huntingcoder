@@ -61,34 +61,34 @@ fetch('http://localhost:8080/api/postcontact', {
   }
 
   return (
-    <div classNameName={styles.container}>
+    <div className={styles.container}>
     <h1>Contact Us</h1>
 
     <div>
 
     <form onSubmit={handleSubmit}>
-    <div classNameName={styles.mb3}>
-    <label htmlFor="name" classNameName={styles.formlabel}>Name</label>
-    <input classNameName={styles.input} type="text" value={name} onChange={handleChange} className="form-control" name="name" id="name" aria-describedby="emailHelp" required/>
+    <div className={styles.mb3}>
+    <label htmlFor="name" className={styles.formlabel}>Name</label>
+    <input className={styles.input} type="text" value={name} onChange={handleChange}  name="name" id="name" aria-describedby="emailHelp" required/>
 
   </div>
-  <div classNameName={styles.mb3}>
-    <label htmlFor="email" classNameName={styles.formlabel}>Email address</label>
-    <input classNameName={styles.input}  type="email" value={email} onChange={handleChange} className="form-control" id="email" name='email' aria-describedby="emailHelp" required />
+  <div className={styles.mb3}>
+    <label htmlFor="email" className={styles.formlabel}>Email address</label>
+    <input className={styles.input}  type="email" value={email} onChange={handleChange}  id="email" name='email' aria-describedby="emailHelp" required />
 
   </div>
-  <div classNameName={styles.mb3}>
-    <label htmlFor="phone" classNameName={styles.formlabel}>Contact</label>
-    <input classNameName={styles.input}  type="number" value={contact} onChange={handleChange} className="form-control" id="phone" name='phone' aria-describedby="emailHelp"required />
+  <div className={styles.mb3}>
+    <label htmlFor="phone" className={styles.formlabel}>Contact</label>
+    <input className={styles.input}  type="number" value={contact} onChange={handleChange}  id="phone" name='phone' aria-describedby="emailHelp"required />
 
   </div>
-  <div classNameName={styles.mb3}>
-    <label htmlFor="desc" classNameName={styles.formlabel}>Textarea</label>
-    <textarea classNameName={styles.input}  value={desc} onChange={handleChange} className="form-control is-invalid" id="desc"  name="desc" placeholder="Required example textarea" required />
+  <div className={styles.mb3}>
+    <label htmlFor="desc" className={styles.formlabel}>Textarea</label>
+    <textarea className={styles.input}  value={desc} onChange={handleChange}  id="desc"  name="desc" placeholder="Required example textarea" required />
 
   </div>
 
-  <button type="submit" classNameName={styles.btn} >Submit</button>
+  <button type="submit" className={styles.btn} >Submit</button>
 </form>
     </div>
     </div>
